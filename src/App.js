@@ -30,13 +30,13 @@ function App() {
     setEmail('')
     setName('')
     setNumber('')
-    window.location = "http://localhost:3000/"
+    window.location = "/"
   }
 
   const hundleDelete = (id) =>{
     const listItems = contacts.filter(contact => contact.id !== id)
     sendAndGetContact(listItems)
-    window.location = "http://localhost:3000/"
+    window.location = "/"
   }
 
   return (
